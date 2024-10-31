@@ -1,0 +1,1226 @@
+:root {
+  --default-font-family: 'Poppins', sans-serif;
+  --heading-font-family: 'Playfair Display', serif;
+}
+
+body {
+  font-family: var(--default-font-family);
+  font-weight: 400;
+  background: #140906;
+  overflow-x: hidden; 
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font-family);
+  font-weight: 700;
+}
+
+.main-container {
+  position: relative;
+  width: 100%;
+  max-width: 100vw; 
+  margin: 0 auto;
+  padding: 0 2vw;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+.content-container {
+  width: 100%;
+  max-width: 90vw;
+  margin: 0 auto;
+  padding: 0 2vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 5vh;
+  box-sizing: border-box;
+}
+
+input,
+select,
+textarea,
+button {
+  outline: 0;
+  width: 100%;
+  max-width: 100%;
+}
+
+.flex-row-e {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+  height: 3vh;               
+  margin: 1vh auto 0;
+  z-index: 70;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1600px) {
+  .main-container, .content-container {
+    max-width: 85vw;
+  }
+}
+
+@media (max-width: 1200px) {
+  .content-container {
+    max-width: 80vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-container, .content-container {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-container, .content-container {
+    padding: 0 5vw;
+  }
+}
+
+/*
+/* MARKETING SECTION */
+.marketing-container {
+  width: 100%;
+  max-width: 90vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.marketing {
+  color: #67ed00;
+  font-size: 10vw;
+  max-font-size: 120px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: left;
+  white-space: nowrap;
+  margin-bottom: 2vh;
+  z-index: 91;
+}
+
+.comprehensive-approach {
+  width: 90%;
+  max-width: 50vw;
+  color: #ECEBEB;
+  font-size: 2vw;
+  max-font-size: 25px;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: 0.25vw;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 2vw;
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+
+.flex-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  max-width: 90vw;
+  margin: 5vh auto 0;
+  z-index: 89;
+  gap: 3vw;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.scheme, .scheme-1 {
+  flex-shrink: 0;
+  position: relative;
+  width: 38%;
+  max-width: 66vw;
+  height: 18vw;
+  background-size: cover;
+  box-sizing: border-box;
+  z-index: 89;
+  overflow: hidden;
+}
+
+.scheme {
+  background-image: url(./assets/images/30e01c45-00ed-4ffa-a401-a636cf49040d.png);
+} 
+.scheme-1 {
+  background-image: url(./assets/images/7e68f0d1-ac7b-4703-86cd-9cb2a9206c61.png);
+}
+
+@media (max-width: 1600px) {
+  .marketing-container, .flex-row {
+    max-width: 85vw;
+    width: 101%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .marketing-container, .flex-row {
+    max-width: 80vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .marketing-container, .flex-row {
+    max-width: 100%;
+  }
+  .comprehensive-approach {
+    width: 100%;
+    max-width: 90vw;
+    margin-right: 5vw;
+    padding: 0 4vw;
+    text-align: center;
+  }
+  .scheme, .scheme-1 {
+    max-width: 77vw;
+    height: 21vw;
+    width: 37%;
+  }
+  .scheme{
+    margin-left: 50%;
+  }
+  .scheme-1{
+    margin-right: 50%;
+  }
+  .flex-row{
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .marketing-container, .flex-row {
+    padding: 0 5vw;
+  }
+  .marketing {
+    font-size: 11vw;
+  }
+  .comprehensive-approach {
+    font-size: 2.5vw;
+    letter-spacing: 0.15vw;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 5vw;
+    text-align: justify;
+  }
+  .scheme, .scheme-1 {
+    max-width: 100%;
+    height: 70vw;
+  }
+  .flex-row-e {
+    width: 100%;
+    margin: 2vh 0;
+  }
+  .scheme, .scheme-1 {
+    max-width: 77vw;
+    height: 21vw;
+    width: 57%;
+  }
+  .scheme{
+    margin-left: 50%;
+  }
+  .scheme-1{
+    margin-right: 50%;
+  }
+  .flex-row{
+    flex-direction: column;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*______________BRANDING SECTION______________*/
+
+/* Основной контейнер для секции BRANDING */
+.branding-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 75vw;             /* Ограничиваем максимальную ширину в vw */
+  margin: 0 auto;
+  padding: 5vh 2vw;            /* Отступы вокруг контейнера */
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .branding-section {
+    padding: 4vh 5vw;          /* Уменьшаем отступы на маленьких экранах */
+  }
+}
+
+/* Контейнер для заголовка BRANDING */
+.frame {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 45vw;              /* Ограничиваем максимальную ширину */
+  height: auto;
+  background: url(./assets/images/15bf861d-f4ee-422e-b2a8-1bcb58cdab52.png) no-repeat center;
+  background-size: contain;
+  padding: 1.5vw;
+  z-index: 83;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .frame {
+    max-width: 90vw;
+    padding: 1vw;
+  }
+}
+
+/* Вспомогательный контейнер .frame-2 */
+.frame-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 45vw;
+  height: auto;
+  margin-left: auto;
+  background: url(./assets/images/15bf861d-f4ee-422e-b2a8-1bcb58cdab52.png) no-repeat center;
+  background-size: contain;
+  padding: 3.5vw;
+  z-index: 83;
+  box-sizing: border-box;
+  overflow: hidden; /* Предотвращаем выход текста за рамки */
+}
+
+@media (max-width: 768px) {
+  .frame-2 {
+    max-width: 90vw;
+    margin-left: 0;            /* Центрируем на мобильных */
+    padding: 1vw;
+  }
+}
+
+/* Заголовок BRANDING */
+.branding-e0 {
+  color: #67ed00;
+  font-size: 5vw;
+  font-weight: 700;
+  line-height: 1.2em;
+  text-align: center;
+  white-space: nowrap;
+  margin-bottom: 1.5vh;
+  z-index: 82;
+
+}
+
+@media (max-width: 480px) {
+  .branding-e0 {
+    font-size: 6vw;
+    margin-bottom: 1vh;
+  }
+}
+
+/* Контейнер для графики и описания */
+.flex-row-f-e1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 75vw;
+  margin-top: 2vh;
+  padding: 2vw;
+  box-sizing: border-box;
+  z-index: 86;
+}
+
+@media (max-width: 768px) {
+  .flex-row-f-e1 {
+    flex-direction: column;
+    align-items: center;
+    padding: 1vw;
+  }
+}
+
+/* Логотип или картинка (мышь) */
+.mouse {
+  position: relative;           /* Относительное позиционирование для лучшей гибкости */
+  width: 10vw;                  /* Максимальный размер в vw */
+  height: auto;
+  background: url(./assets/images/0052c064-efed-410e-bed1-ba8ab2d3471f.png) no-repeat center;
+  background-size: contain;
+  z-index: 86;
+  margin: 0 auto;               /* Центрируем элемент */
+}
+
+@media (max-width: 768px) {
+  .mouse {
+    max-width: 15vw;
+  }
+}
+
+/* Описание услуг брендинга */
+.branding-2 {
+  color: #ffffff;
+  font-size: 1.5vw;
+  font-weight: 400;
+  line-height: 1.4em;
+  text-align: left;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+  z-index: 85;
+}
+
+@media (max-width: 1200px) {
+  .branding-2 {
+    font-size: 2vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .branding-2 {
+    font-size: 2vw;
+    text-align: center;
+    width: 60%;
+    padding-top: 2%;
+        padding-bottom: 2%;
+  }
+  .branding-section {
+    padding: 4vh 5vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .branding-2 {
+    font-size: 2vw;
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Общий контейнер для секций */
+.content-sections {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* Контейнер для секции Production */
+.production-container {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  top: -97vw;
+  left: 12vw;
+}
+
+/* Основной контент */
+.production-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px; /* Максимальная ширина для десктопа */
+  margin: 0 auto;
+  padding: 5vh 2vw;
+  box-sizing: border-box;
+  z-index: 3; /* Поверх декоративных элементов */
+}
+
+@media (max-width: 1024px) {
+  .production-wrapper {
+    padding: 5vh 5vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .production-wrapper {
+    flex-direction: column;
+    align-items: center;
+    padding: 5vh 5vw;
+  }
+}
+
+/* Текстовый блок */
+.production-text {
+  position: relative;
+  max-width: 50%;
+  width: 100%;
+  text-align: right;
+  color: #ffffff;
+  margin-left: auto;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1024px) {
+  .production-text {
+    max-width: 60%;
+  }
+}
+
+@media (max-width: 768px) {
+  .production-text {
+    max-width: 90%;
+    text-align: center;
+    margin: 2vh auto 0;
+  }
+}
+
+.production {
+  font-size: 3vw;
+  color: #f2cfc6;
+  margin-bottom: 2vh;
+}
+
+.end-to-end-solutions {
+  font-size: 1.5vw;
+  color: #ffffff;
+  line-height: 1.5;
+}
+
+@media (max-width: 1024px) {
+  .production {
+    font-size: 4vw;
+  }
+  .end-to-end-solutions {
+    font-size: 2vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .production {
+    font-size: 6vw;
+  }
+  .end-to-end-solutions {
+    font-size: 3.5vw;
+  }
+}
+
+/* Декоративные элементы */
+
+/* Полигон (фон) */
+.polygon-7 {
+  position: relative;
+  top: -59vw;
+  left: 19vw;
+  width: 100%;
+  height: 70vw;
+  background: url(./assets/Polygon-7.png) no-repeat center center;
+  background-size: contain;
+  /* filter: blur(50px); */
+  z-index: 1;
+  pointer-events: none;
+}
+
+
+
+/* Проектор */
+.projector {
+  position: relative;
+  top: 25vw;
+  left: -121px;
+  width: 41%;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.projector svg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+
+@media (max-width: 1600px) {
+
+}
+
+@media (max-width: 1200px) {
+  .content-container {
+    max-width: 80vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-container, .content-container {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-container, .content-container {
+    padding: 0 5vw;
+  }
+}
+
+/* Дополнительные стили для адаптивности */
+.production-wrapper {
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .production-wrapper {
+    justify-content: center;
+  }
+}
+
+
+/* Адаптивные стили для мобильных устройств */
+
+/*______________design________________*/ 
+/* Общий контейнер для секции Design */
+.design-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Высота секции 100% видимой области */
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  background-color: transparent;
+}
+
+
+/* Заголовок Design */
+.design {
+  font-size: 80px;
+  
+  color: #f2cfc6;
+  margin-bottom: 20px;
+  position: absolute;
+  top: 2%;
+  left: 26%;
+  z-index: 53;
+}
+
+/* Контейнер для декоративных элементов (mugs) */
+.mugs {
+  position: absolute;
+ 
+  width: 50vw; /* Уменьшаем ширину с фиксированных пикселей */
+  height: auto;
+  z-index: 50;
+  background-color: transparent; /* Сделать фон прозрачным */
+}
+
+.mugs img {
+  position: absolute;
+  width: 100%; /* Все изображения занимают 100% ширины контейнера */
+  height: auto;
+  opacity: 1;
+}
+
+/* Индивидуальные позиции для каждого декоративного изображения */
+.mugs img:nth-child(1) {
+  width: 587px;
+  height: 792px;
+  z-index: 1;
+}
+.mugs img:nth-child(2) {
+  width: 667px;
+  height: 714px;
+  top: 100px;
+  left: -15px;
+  z-index: 2;
+}
+.mugs img:nth-child(3) {
+  width: 572px;
+  height: 518px;
+  top: 260px;
+  left: 20px;
+  z-index: 3;
+}
+.mugs img:nth-child(4) {
+  width: 439px;
+  height: 327px;
+  top: 400px;
+  left: 90px;
+  z-index: 4;
+}
+
+/* Стили для текста Graphic, Motion и 3D */
+.graphic, .motion, .text-b {
+  font-size: 50px;
+
+  color: #f2cfc6;
+  position: absolute;
+  z-index: 54;
+}
+
+.graphic {
+  top: 17%;
+  left: 36%;
+}
+
+.motion {
+  top: 34%;
+  left: 42%;
+
+}
+
+.text-b {
+  top: 48%;
+    left: 46%;
+
+}
+
+/* Описание creative-department */
+.creative-department {
+  font-size: 30px;
+  
+  color: #ffffff;
+  width: 400px;
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  text-align: right;
+  z-index: 57;
+}
+
+/* Адаптивные стили для мобильных устройств (от 375px до 667px) */
+
+
+
+/* Общий контейнер для секции Web & Mobile */
+/* Общий контейнер для секции Web & Mobile */
+.web-mobile-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+
+/* Контейнер для текста и телефона */
+.web-mobile-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 100%; /* Используем 100%, чтобы не выходило за экран */
+  padding: 20px 0;
+}
+
+/* Левый блок для заголовка и текста */
+.web-mobile-left {
+  display: flex;
+  flex-direction: column; /* Вертикальное размещение */
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 50%; /* Занимает 50% ширины */
+  gap: 140px;
+}
+
+/* Заголовок */
+.web-mobile-development {
+  color: #f2cfc6;
+ 
+  font-size: 120px;
+  font-weight: 700;
+  margin-bottom: 2vw; /* Пример, адаптивное значение в процентах от ширины экрана */
+  padding: 2vw;
+}
+
+/* Описание (слева от телефона) */
+.web-mobile-department {
+  color: #ffffff;
+ 
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+}
+
+/* Телефон (рамки) */
+.rectangle-b {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 450px;
+  border: 5px solid #ffffff;
+  border-radius: 75px;
+  margin-left: 2vw;
+  margin-top: 400px;
+}
+
+
+.rectangle-c {
+  border: 20px solid #ffffff;
+  border-radius: 55px;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+/*______________advertisement_________________*/
+.advertisement {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  
+  color: #f2cfc6;
+  font-family: Century Schoolbook, var(--default-font-family);
+  font-size: 120px;
+  font-weight: 700;
+  line-height: 144px;
+  text-align: right;
+  white-space: nowrap;
+  z-index: 20;
+}
+.advertising-promotion-department {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  width: 583px;
+  height: 167px;
+  gap: 40px;
+  color: #ffffff;
+  font-family: Source Code Pro, var(--default-font-family);
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 37.71px;
+  text-align: left;
+  z-index: 21;
+}
+/* Контейнер для устройств */
+.devices-container {
+  display: flex;
+  justify-content: space-between; /* Распределяем устройства по всему контейнеру */
+  align-items: center;
+  width: 100%; /* Контейнер занимает всю ширину */
+  max-width: 1440px; /* Максимальная ширина контейнера */
+  margin: 0 auto;
+  padding: 0 20px; /* Отступы по бокам */
+  gap: 100px; /* Увеличиваем расстояние между устройствами */
+}
+
+/* Стили для каждого устройства */
+.phone, .tablet, .nout {
+  position: relative;
+}
+
+/* Телефон */
+.phone {
+  width: 127px;
+    height: 237px;
+  background-color: #adadad;
+  border: 10px solid #302927;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Планшет */
+.tablet {
+  width: 461px; /* Размер планшета */
+  height: 298px;
+  background-color: #adadad;
+  border: 10px solid #302927;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Ноутбук */
+.nout {
+  width: 496.6px; /* Размер ноутбука */
+  height: 360px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(./assets/images/a14a953e-dd8a-4b46-b0d7-ff0abc6c6e8f.png) no-repeat center;
+  background-size: cover;
+}
+
+
+
+
+
+@media (max-width: 667px) {
+  .advertisement {
+    font-size: 31px;
+    color: #67ED00; 
+    margin-bottom: 20px;
+    height: 100px;
+  }
+
+  .advertising-promotion-department {
+    font-size: 18px;
+    width: 100%;
+    max-width: none;
+    position: relative;
+    text-align: left;
+    margin-bottom: 30px;
+    color: #FFFFFF; /* Белый цвет для текста */
+  }
+
+  .devices-container {
+    display: flex;
+  
+    align-items: flex-end;
+    gap: 20px;
+    padding: 0;
+    margin-top: 30px;
+  }
+
+  .phone, .tablet, .nout {
+   
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Предотвращаем обрезание содержимого */
+  
+  }
+
+  .phone {
+    width: 60px;
+    height: 112px;
+    border-radius: 10px;border: 5px solid #302927;
+  }
+
+  .tablet {
+    width: 120px;
+    height: 78px;
+    border-radius: 10px;
+    border: 5px solid #302927;
+  }
+
+  .nout {
+    width: 150px;
+    height: 142px;
+    border-radius: 10px;
+    position: relative;
+  }
+
+  /* Добавляем стили для изображений внутри устройств */
+  .phone img, .tablet img, .nout img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Сохраняем пропорции изображения */
+  }
+   /* Уменьшаем размер логотипа на ноутбуке */
+   .nout img {
+
+    position: absolute; /* Абсолютное позиционирование */
+    top: 39%; /* Сдвигаем вниз на 50% высоты контейнера */
+    left: 50%; /* Сдвигаем вправо на 50% ширины контейнера */
+    transform: translate(-50%, -50%); /* Центрируем логотип */ }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.flex-row-bfe {
+  position: relative;
+  width: 1108px;
+  height: 1045px;
+  margin: 0 0 0 58px;
+  z-index: 14;
+}
+.lamp-d7 {
+  position: absolute;
+  width: 83.75%;
+  height: 88.8%;
+  top: 0;
+  left: 16.25%;
+  background: url(./assets/images/1bdb47de59901851697b795427bd36899bb2fef9.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 13;
+}
+.floor-d8 {
+  position: absolute;
+  width: 77.17%;
+  height: 81.82%;
+  top: 9.57%;
+  left: 19.49%;
+  background: url(./assets/images/3bf9c8df53175e587ac52f2ffc393340d4b05b83.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 12;
+}
+.marketing-d9 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 2.93%;
+  top: 14.07%;
+  left: 0;
+  color: #ffffff;
+  font-family: Source Code Pro, var(--default-font-family);
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30.655px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 4;
+}
+.branding {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 2.93%;
+  top: 18.23%;
+  left: 0;
+  color: #ffffff;
+  font-family: Source Code Pro, var(--default-font-family);
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30.655px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 5;
+}
+.pr-da {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 2.93%;
+  top: 22.39%;
+  left: 0;
+  color: #ffffff;
+  font-family: Source Code Pro, var(--default-font-family);
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30.655px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 6;
+}
+.production-db {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 2.93%;
+  top: 26.56%;
+  left: 0;
+  color: #ffffff;
+  font-family: Source Code Pro, var(--default-font-family);
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30.655px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 7;
+}
+.vrotberunichik-dc {
+  position: absolute;
+  width: 66.79%;
+  height: 70.81%;
+  top: 28.04%;
+  left: 24.73%;
+  background: url(./assets/images/e7c91857f64deeeb2c9957b7cfc3c7ee5fc9fa97.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 14;
+}
+.design-dd {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 2.93%;
+  top: 30.72%;
+  left: 0;
+  color: #ffffff;
+  font-family: Source Code Pro, var(--default-font-family);
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30.655px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 8;
+}
+.web-mobile-dev {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 2.87%;
+  top: 34.93%;
+  left: 0;
+  color: #ffffff;
+  font-family: Source Code Pro, var(--default-font-family);
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 9;
+}
+.advertisement-de {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 2.97%;
+  top: 39.04%;
+  left: 0;
+  color: #ffffff;
+  font-family: Source Code Pro, var(--default-font-family);
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 31px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 10;
+}
+.we-know-what-you-want {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: absolute;
+  width: 38.09%;
+  height: 17.22%;
+  top: 82.78%;
+  left: 39.08%;
+  font-family: Source Code Pro, var(--default-font-family);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 180px;
+  text-align: center;
+  white-space: nowrap;
+  background: linear-gradient(180deg, #a3a3a3, #8c7772);
+  z-index: 11;
+
+  -webkit-text-fill-color: transparent;
+}
+.foncvet {
+  position: absolute;
+  width: 1440px;
+  height: 8770px;
+  top: 0;
+  left: 0;
+  /*
+  background: url(./assets/images/6d1e442fe44287aedb4e6b9dfdb87e92a16ca785.png)
+    no-repeat center;
+  background-size: cover;
+  */
+}
+.foncvet-df {
+  position: absolute;
+  width: 1440px;
+  height: 8763.914px;
+  top: 0;
+  left: 0;
+  /*
+  background: url(./assets/images/b42718b558564a4517b128d4b6fefba1d7d039e8.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 1;
+  */
+}
+
+
+
+.h1{
+  color: #67ed00;
+}
+
+/* Родительский контейнер для всех элементов */
+.flex-row-bd {
+  position: relative;  /* Для абсолютного позиционирования дочерних элементов */
+  height: 400px;       /* Достаточная высота для размещения элементов */
+}
+
+
+/* Картинка на ноутбуке (nout) */
+.logoimgdown-3 img {
+ margin-bottom: 60px;         /* Устанавливаем выше других элементов */
+}
+/*
+.img11, .img12, .img13, .img14, .design, .graphic, .motion, .text-b {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(50px); /* Для эффекта перемещения вверх */
+/*
+.creative-department {
+  opacity: 0;                    
+  visibility: hidden;            
+  transform: translateX(100%);  
+}
+
+.web-mobile-development {
+  opacity: 0;                   
+  visibility: hidden;            
+}
+
+
+
+
+
+
+
